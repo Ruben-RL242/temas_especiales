@@ -18,7 +18,7 @@ app.get('/', (_, res) => {
 function fibonacci(){
     let arr=[];
     const sol = [0, 1];
-    for (let i = 2; i<= 10; i++) {
+    for (let i = 2; i<= 11; i++) {
         sol[i] = sol[i -1] + sol[i - 2];
         element=sol[i]
         arr.push(element);
