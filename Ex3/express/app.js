@@ -18,7 +18,7 @@ app.get('/', (_, res) => {
 function fibonacci(){
     let arr=[];
     const sol = [0, 1];
-    for (let i = 2; i<= 11; i++) {
+    for (let i = 2; i<= 10; i++) {
         sol[i] = sol[i -1] + sol[i - 2];
         element=sol[i]
         arr.push(element);
@@ -27,7 +27,7 @@ function fibonacci(){
     return arr;
 }
 
-app.get('/fibonacci', (_, res) => {
+app.post('/fibonacci', (_, res) => {
     res.send({
         message: `Los primeros 10 números de fibonacci son: ${fibonacci()}`
     });
