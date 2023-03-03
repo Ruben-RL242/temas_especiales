@@ -36,7 +36,7 @@ class Math {
      * uniquesArr
      * @param {Array<number>} arr the array of numbers to average
      */
-    uniques (arr){
+    /* uniques (arr){
         const unicos = [];
 
         for(let i = 0; i < arr.length; i++) {
@@ -48,7 +48,27 @@ class Math {
             }
         }
         return unicos;
+    } */
+    /* uniques (arr){
+        const dataArr = new Set(arr);
+        let result = [...dataArr];
+        return result;
+    } */
+    uniques(arr){
+        const newarr=[];
+        const dic={};
+        for(let i = 0; i < arr.length; i++) {
+            const inx=arr[i];
+            if (!dic[inx]) {
+                dic[inx]=true;
+                newarr.push(inx);
+                
+            }
+        }
+        return newarr;    
     }
+
+
   }
   
   module.exports = Math;
