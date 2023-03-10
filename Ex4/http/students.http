@@ -1,0 +1,23 @@
+GET http://localhost:3000/students?limit=100 HTTP/1.1
+
+
+###
+GET http://localhost:3000/students/becados?limit=100 HTTP/1.1
+
+###
+GET http://localhost:3000/students/Mayor20?limit=100 HTTP/1.1
+
+###
+GET http://localhost:3000/students/InterAge?limit=100 HTTP/1.1
+
+###
+GET http://localhost:3000/teachers?limit=100 HTTP/1.1
+
+###
+GET http://localhost:3000/teachers/InterAge?limit=100 HTTP/1.1
+
+###
+GET http://localhost:3000/teachers/id?id=000091 HTTP/1.1
+
+###
+GET http://localhost:3000/teachers/firstletter?firstLetter=A HTTP/1.1
